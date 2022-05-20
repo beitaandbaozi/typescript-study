@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 // type inference  类型推断
 let str: string = 'str'
 // str = 123
-
-=======
-// type inference
-let str = 'str'
->>>>>>> 406fd455b355ebebd5f9ab4ce2ebeb9f2f7f6d84
-
 // union types  联合类型
 let numberOrString: number | string
 

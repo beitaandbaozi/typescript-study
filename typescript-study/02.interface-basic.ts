@@ -1,3 +1,4 @@
+// TODO interface 相当于对定义的对象做出规范
 interface Person {
   // 属性前加上 readonly 表示只读 不可更改
   readonly id: number

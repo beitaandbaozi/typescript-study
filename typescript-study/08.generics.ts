@@ -34,3 +34,28 @@ const obj = echoWithLength({ length: 10 })
 const arr2 = echoWithLength([1, 2, 3])
 
 // echoWithLength(13)  13没有length这个属性
+
+class Queue<T>{
+  private data = []
+  push(item: T) {
+    return this.data.push(item)
+  }
+  pop(): T {
+    return this.data.shift()
+  }
+}
+const queue = new Queue<number>()
+queue.push(1)
+// queue.push('str')
+console.log(queue.pop().toFixed())
+
+interface KeyPair<T, U> {
+  key: T,
+  value: U
+}
+let kp1: KeyPair<number, string> = { key: 1, value: 'string' }
+let kp2: KeyPair<string, number> = { key: 'str', value: 2 }
+
+let arr: number[] = [1, 2, 3]
+//  让 arrTwo 是一个装满数字的数组
+let arrTwo: Array<number> = [1, 2, 3]
